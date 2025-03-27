@@ -15,7 +15,7 @@ jobs:
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
-          AZURE_STATIC_WEB_APPS_API_TOKEN_27_MARCH: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_27_MARCH }}
+          AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_27_MARCH }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}  # Authentication জন্য
           action: "upload"
           app_location: "/"    # তোমার Static Web App-এর মূল ফোল্ডার
